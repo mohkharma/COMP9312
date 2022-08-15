@@ -4,7 +4,7 @@ import numpy as np
 
 n_samples = 300
 centers = 3
-cluster_std = 0.9
+cluster_std = 0.6
 n_features = 2
 random_state = 0
 
@@ -25,7 +25,7 @@ plt.show()
 
 data = np.concatenate((X, np.expand_dims(y, 1)), axis=1)
 np.savetxt(
-    "/Users/mkhalilia/src/github/birzeit/comp9318/data/3gaussians-std0.9.csv",
+    "/Users/mkhalilia/src/github/birzeit/comp9318/data/3gaussians-std0.6.csv",
     data,
     delimiter=",",
 )
